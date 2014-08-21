@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <a href="<%= "/" %>">Slacker News  |</a>
+        </li>
+        <li>
+          <a href="<%= "/new" %>">new</a>
+        </li>
+        <li>
+          <a href="">comments</a>
+        </li>
+        <li>
+          <a href="">show</a>
+        </li>
+        <li>
+          <a href="">ask</a>
+        </li>
+        <li>
+          <a href="">jobs</a>
+        </li>
+        <li>
+          <a href="">submit</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <%= yield %>
+  </body>
+</html>

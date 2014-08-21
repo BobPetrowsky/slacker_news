@@ -1,0 +1,16 @@
+<section>
+<ol>
+
+  <% counter = 0 %>
+  <% @articles.each do |article| %>
+  <% counter += 1 %>
+  <li>
+  <%= counter %>.
+  <a href="<%=article["url"] %>"><%= article["title"] %></a>
+  <span>(<%= article["url"] %>)</span>
+  <p>Discription: <%= article["description"] %></p>
+  </li>
+
+  <% end %>
+</ol>
+</section>
